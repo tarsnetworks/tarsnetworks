@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TARS Networks - Turning Ambitions into Real Startups</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0FB5B5',secondary:'#FF7846'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+scroll-behavior: smooth;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=modern%2520tech%2520startup%2520environment%2520with%2520gradient%2520background%2520in%2520light%2520teal%2520to%2520white%2520colors%2520on%2520right%2520side%2520with%2520clean%2520white%2520space%2520on%2520left%2520side%2520for%2520text%2520placement%252C%2520subtle%2520geometric%2520patterns%252C%2520minimalist%2520tech%2520aesthetic%252C%2520professional%2520atmosphere%252C%2520high%2520quality%2520digital%2520illustration&width=1920&height=1080&seq=hero1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.service-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.timeline-connector {
+height: 2px;
+background-color: #E5E7EB;
+flex-grow: 1;
+margin: 0 10px;
+}
+.portfolio-card:hover .overlay {
+opacity: 1;
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #0FB5B5;
+}
+.custom-checkbox {
+appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #D1D5DB;
+border-radius: 4px;
+position: relative;
+}
+.custom-checkbox:checked {
+background-color: #0FB5B5;
+border-color: #0FB5B5;
+}
+.custom-checkbox:checked::after {
+content: '';
+position: absolute;
+left: 6px;
+top: 2px;
+width: 6px;
+height: 10px;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.testimonial-slide {
+transition: opacity 0.3s ease;
+}
+</style>
+</head>
+<body class="bg-white text-gray-800">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="h-12">
+<img src="https://static.readdy.ai/image/c384ba9ce04c0eeacb5ee15aa9580a36/78c69925607d391994a3ffec47b0fb7e.jpeg" alt="TARS Logo" class="h-full">
+</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#about" class="font-medium hover:text-primary transition-colors">About</a>
+<a href="#services" class="font-medium hover:text-primary transition-colors">Services</a>
+<a href="#how-it-works" class="font-medium hover:text-primary transition-colors">How It Works</a>
+<a href="#portfolio" class="font-medium hover:text-primary transition-colors">Portfolio</a>
+<a href="#testimonials" class="font-medium hover:text-primary transition-colors">Testimonials</a>
+<a href="#contact" class="font-medium hover:text-primary transition-colors">Contact</a>
+</nav>
+<button class="md:hidden w-10 h-10 flex items-center justify-center" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden bg-white shadow-lg absolute w-full">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#about" class="font-medium py-2 hover:text-primary transition-colors">About</a>
+<a href="#services" class="font-medium py-2 hover:text-primary transition-colors">Services</a>
+<a href="#how-it-works" class="font-medium py-2 hover:text-primary transition-colors">How It Works</a>
+<a href="#portfolio" class="font-medium py-2 hover:text-primary transition-colors">Portfolio</a>
+<a href="#testimonials" class="font-medium py-2 hover:text-primary transition-colors">Testimonials</a>
+<a href="#contact" class="font-medium py-2 hover:text-primary transition-colors">Contact</a>
+</div>
+</div>
+</header>
+<!-- Hero Section --><section class="hero-section min-h-screen flex items-center pt-20 relative overflow-hidden">
+  <div class="container mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="z-10">
+        <h1 id="typewriter" class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8 text-black"></h1>
+        <p class="text-xl text-gray-600 mb-12 max-w-xl">
+          Your trusted partner in building successful tech ventures. We provide the tools, expertise, and network to transform your ideas into thriving businesses.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all shadow-lg whitespace-nowrap">
+            Apply Now
+          </a>
+          <a href="#services" class="border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-all whitespace-nowrap">
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="relative z-10 hidden md:block">
+        <img src="https://readdy.ai/api/search-image?query=modern%2520tech%2520startup%2520environment%2520with%2520creative%2520workspace%252C%2520innovative%2520team%2520collaboration%252C%2520clean%2520and%2520minimal%2520office%2520setting%252C%2520professional%2520atmosphere%252C%2520high%2520end%2520digital%2520illustration%2520with%2520soft%2520lighting%2520and%2520depth%2520of%2520field&width=800&height=600&seq=hero3&orientation=landscape" 
+          alt="Startup Workspace" 
+          class="w-full rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300">
+      </div>
+    </div>
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent z-0"></div>
+</section>
+
+<style>
+  #typewriter::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    color: teal;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
+
+<script>
+  const phrases = [
+    "TARS – Teaching and Accelerating Research & Startups",
+    "TARS – Transforming Ambitions into Real Startups",
+    "TARS – Training And Raising Startups",
+    "TARS – Turning Aspirations into Real Success",
+    "TARS – Teaching, Accelerating, and Reshaping Startups",
+    "TARS – The Accelerator for Rising Startups"
+  ];
+
+  const typeTarget = document.getElementById("typewriter");
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typeLoop() {
+    const currentPhrase = phrases[phraseIndex];
+    const visibleText = currentPhrase.substring(0, charIndex);
+    typeTarget.innerHTML = visibleText;
+
+    if (!deleting && charIndex < currentPhrase.length) {
+      charIndex++;
+      setTimeout(typeLoop, 60);
+    } else if (deleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(typeLoop, 30);
+    } else {
+      deleting = !deleting;
+      if (!deleting) {
+        phraseIndex = (phraseIndex + 1) % phrases.length;
+      }
+      setTimeout(typeLoop, 1000);
+    }
+  }
+
+  window.addEventListener("load", typeLoop);
+</script>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">About <span class="text-primary">TARS</span></h2>
+<div class="w-20 h-1 bg-primary mb-8"></div>
+<p class="text-gray-600 mb-6">
+TARS Networks is a premier startup incubator dedicated to transforming innovative ideas into successful businesses. Our name stands for <strong>Teaching and Accelerating Research & Startups</strong>, reflecting our commitment to education, acceleration, and sustainable growth.
+</p>
+<p class="text-gray-600 mb-8">
+Founded in 2022, we've helped 2 startups launch and scale their operations across various industries. Our team of experienced entrepreneurs, developers, and marketers provides comprehensive support at every stage of your startup journey.
+</p>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-6">
+<div class="bg-white p-8 rounded shadow-lg text-center">
+<div class="text-4xl font-bold text-primary mb-2 counter" data-target="2">0</div>
+<p class="text-gray-600">Startups Launched</p>
+</div>
+<div class="bg-white p-8 rounded shadow-lg text-center">
+<div class="text-4xl font-bold text-primary mb-2 counter" data-target="100">0</div>
+<p class="text-gray-600">Success Rate (%)</p>
+</div>
+<div class="bg-white p-8 rounded shadow-lg text-center">
+<div class="text-4xl font-bold text-primary mb-2 counter" data-target="17">0</div>
+<p class="text-gray-600">Team Members</p>
+</div>
+<div class="bg-white p-8 rounded shadow-lg text-center">
+<div class="text-4xl font-bold text-primary mb-2 counter" data-target="3">0</div>
+<p class="text-gray-600">Years Experience</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+We offer a comprehensive suite of services designed to help startups at every stage of their journey, from ideation to market expansion.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Web Development -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-code-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Web Development</h3>
+<p class="text-gray-600">
+Custom, responsive websites and web applications built with modern technologies. We focus on performance, user experience, and scalability.
+</p>
+</div>
+<!-- App Development -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-smartphone-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">App Development</h3>
+<p class="text-gray-600">
+Native and cross-platform mobile applications for iOS and Android. We deliver intuitive, feature-rich apps that engage users and drive growth.
+</p>
+</div>
+<!-- Digital Marketing -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-line-chart-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Digital Marketing</h3>
+<p class="text-gray-600">
+Comprehensive marketing strategies including SEO, PPC, social media, and content marketing to increase visibility and drive customer acquisition.
+</p>
+</div>
+<!-- Startup Incubation -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-rocket-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Startup Incubation</h3>
+<p class="text-gray-600">
+End-to-end support including workspace, funding opportunities, legal guidance, and market entry strategies for early-stage startups.
+</p>
+</div>
+<!-- Mentorship -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-user-star-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Mentorship</h3>
+<p class="text-gray-600">
+One-on-one guidance from industry experts and successful entrepreneurs who provide insights, feedback, and strategic direction.
+</p>
+</div>
+<!-- Branding -->
+<div class="service-card bg-white p-8 rounded shadow-lg transition-all duration-300">
+<div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-palette-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Branding</h3>
+<p class="text-gray-600">
+Complete brand identity development including logo design, brand guidelines, messaging, and positioning to establish a strong market presence.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Our proven process helps transform your idea into a successful business through these key steps.
+</p>
+</div>
+<!-- Desktop Timeline -->
+<div class="hidden md:flex items-center justify-between mb-12">
+<div class="timeline-step text-center" data-step="1">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">1</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Application</h3>
+<p class="text-gray-600 max-w-xs mx-auto">
+Submit your startup idea through our simple application process.
+</p>
+</div>
+<div class="timeline-connector"></div>
+<div class="timeline-step text-center" data-step="2">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">2</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Evaluation</h3>
+<p class="text-gray-600 max-w-xs mx-auto">
+Our team evaluates your idea for market potential and feasibility.
+</p>
+</div>
+<div class="timeline-connector"></div>
+<div class="timeline-step text-center" data-step="3">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">3</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Development</h3>
+<p class="text-gray-600 max-w-xs mx-auto">
+We build your product and establish your brand identity.
+</p>
+</div>
+<div class="timeline-connector"></div>
+<div class="timeline-step text-center" data-step="4">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="text-white font-bold text-xl">4</span>
+</div>
+<h3 class="text-xl font-semibold mb-2">Launch</h3>
+<p class="text-gray-600 max-w-xs mx-auto">
+We help you launch your product and acquire your first customers.
+</p>
+</div>
+</div>
+<!-- Mobile Timeline -->
+<div class="md:hidden space-y-12">
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<span class="text-white font-bold">1</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Application</h3>
+<p class="text-gray-600">
+Submit your startup idea through our simple application process.
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<span class="text-white font-bold">2</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Evaluation</h3>
+<p class="text-gray-600">
+Our team evaluates your idea for market potential and feasibility.
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<span class="text-white font-bold">3</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Development</h3>
+<p class="text-gray-600">
+We build your product and establish your brand identity.
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<span class="text-white font-bold">4</span>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Launch</h3>
+<p class="text-gray-600">
+We help you launch your product and acquire your first customers.
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Our Portfolio</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Explore some of the successful startups we've helped build and launch.
+</p>
+</div>
+<div class="flex justify-center mb-8">
+<div class="inline-flex bg-gray-100 p-1 rounded-full">
+<button class="portfolio-filter-btn px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap" data-filter="all">All</button>
+<button class="portfolio-filter-btn px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="web">Web</button>
+<button class="portfolio-filter-btn px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="app">App</button>
+<button class="portfolio-filter-btn px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap" data-filter="branding">Branding</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio Item 1 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="web">
+<img src="https://readdy.ai/api/search-image?query=modern%2520fintech%2520dashboard%2520interface%2520with%2520clean%2520design%252C%2520financial%2520charts%2520and%2520statistics%252C%2520professional%2520layout%252C%2520blue%2520and%2520white%2520color%2520scheme%252C%2520high%2520quality%2520UI%2520design%252C%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port1&orientation=landscape"
+alt="FinTech Dashboard"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">NexusPay</h3>
+<p class="text-gray-600 mb-3">
+A modern fintech platform that simplifies payment processing for small businesses.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">React</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Node.js</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">MongoDB</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+<!-- Portfolio Item 2 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="app">
+<img src="https://readdy.ai/api/search-image?query=mobile%2520fitness%2520app%2520interface%2520with%2520workout%2520tracking%2520features%252C%2520clean%2520modern%2520design%252C%2520health%2520metrics%2520dashboard%252C%2520professional%2520UI%2520design%252C%2520teal%2520and%2520white%2520color%2520scheme%252C%2520high%2520quality%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port2&orientation=landscape"
+alt="Fitness App"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">FitTrack</h3>
+<p class="text-gray-600 mb-3">
+A fitness tracking app that provides personalized workout plans and nutrition guidance.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">React Native</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Firebase</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">ML Kit</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+<!-- Portfolio Item 3 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="branding">
+<img src="https://readdy.ai/api/search-image?query=modern%2520ecommerce%2520website%2520for%2520sustainable%2520fashion%2520brand%252C%2520clean%2520product%2520display%252C%2520minimal%2520design%252C%2520professional%2520layout%252C%2520white%2520background%2520with%2520teal%2520accents%252C%2520high%2520quality%2520UI%2520design%252C%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port3&orientation=landscape"
+alt="Eco Fashion Brand"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">EcoThread</h3>
+<p class="text-gray-600 mb-3">
+A sustainable fashion brand with an e-commerce platform focused on eco-friendly products.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Shopify</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Branding</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">SEO</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+<!-- Portfolio Item 4 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="web">
+<img src="https://readdy.ai/api/search-image?query=real%2520estate%2520property%2520management%2520dashboard%2520interface%252C%2520modern%2520clean%2520design%252C%2520property%2520listings%2520and%2520analytics%252C%2520professional%2520UI%2520layout%252C%2520teal%2520and%2520white%2520color%2520scheme%252C%2520high%2520quality%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port4&orientation=landscape"
+alt="Real Estate Platform"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">PropertyPulse</h3>
+<p class="text-gray-600 mb-3">
+A real estate platform that connects property owners with potential buyers and renters.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Vue.js</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Django</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">PostgreSQL</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+<!-- Portfolio Item 5 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="app">
+<img src="https://readdy.ai/api/search-image?query=food%2520delivery%2520app%2520interface%2520with%2520restaurant%2520listings%2520and%2520order%2520tracking%252C%2520modern%2520clean%2520design%252C%2520professional%2520UI%2520layout%252C%2520orange%2520and%2520white%2520color%2520scheme%252C%2520high%2520quality%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port5&orientation=landscape"
+alt="Food Delivery App"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">QuickBite</h3>
+<p class="text-gray-600 mb-3">
+A food delivery app that connects local restaurants with hungry customers in their area.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Flutter</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Firebase</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Google Maps API</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+<!-- Portfolio Item 6 -->
+<div class="portfolio-card relative rounded overflow-hidden shadow-lg group" data-category="branding">
+<img src="https://readdy.ai/api/search-image?query=educational%2520platform%2520interface%2520with%2520online%2520courses%2520and%2520learning%2520materials%252C%2520modern%2520clean%2520design%252C%2520professional%2520UI%2520layout%252C%2520blue%2520and%2520white%2520color%2520scheme%252C%2520high%2520quality%2520digital%2520illustration%2520with%2520simple%2520background&width=600&height=400&seq=port6&orientation=landscape"
+alt="Educational Platform"
+class="w-full h-64 object-cover object-top">
+<div class="p-6 bg-white">
+<h3 class="text-xl font-semibold mb-2">LearnSphere</h3>
+<p class="text-gray-600 mb-3">
+An online learning platform that offers courses in technology, business, and creative fields.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Next.js</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">Express</span>
+<span class="text-xs bg-gray-100 px-2 py-1 rounded">AWS</span>
+</div>
+</div>
+<div class="overlay absolute inset-0 bg-primary bg-opacity-90 flex items-center justify-center opacity-0 transition-opacity duration-300">
+<a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">
+View Case Study
+</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="bg-white border-2 border-primary text-primary px-8 py-3 rounded-button font-medium hover:bg-primary hover:text-white transition-all shadow-sm whitespace-nowrap">
+View More Projects
+</button>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Clients Say</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Hear from the founders and entrepreneurs who have worked with us to build their startups.
+</p>
+</div>
+<div class="relative max-w-4xl mx-auto">
+<div class="testimonial-slider overflow-hidden">
+<div class="testimonial-slides flex transition-transform duration-300">
+<!-- Testimonial 1 -->
+<div class="testimonial-slide w-full flex-shrink-0 px-4">
+<div class="bg-white p-8 rounded shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520a%2520young%2520indian%2520male%2520entrepreneur%2520with%2520short%2520black%2520hair%252C%2520confident%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520high%2520quality%2520portrait%2520photograph&width=200&height=200&seq=test1&orientation=squarish"
+alt="Pranav Sharma"
+class="w-full h-full object-cover">
+</div>
+<div>
+<h3 class="text-xl font-semibold">Pranav Sharma</h3>
+<p class="text-gray-600">Co-founder, TechVista Solutions</p>
+</div>
+</div>
+<p class="text-gray-700 italic">
+"Working with TARS Networks was a game-changer for our startup. Their technical expertise and strategic guidance helped us build a product that our users love. Within six months of launch, we secured our first round of funding."
+</p>
+<div class="flex mt-4">
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-slide w-full flex-shrink-0 px-4">
+<div class="bg-white p-8 rounded shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520a%2520young%2520indian%2520male%2520entrepreneur%2520with%2520glasses%252C%2520confident%2520expression%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520high%2520quality%2520portrait%2520photograph&width=200&height=200&seq=test2&orientation=squarish"
+alt="Anirudh Sharma"
+class="w-full h-full object-cover">
+</div>
+<div>
+<h3 class="text-xl font-semibold">Anirudh Sharma</h3>
+<p class="text-gray-600">CTO, CloudNine Analytics</p>
+</div>
+</div>
+<p class="text-gray-700 italic">
+"The team at TARS Networks understood our vision from day one. They helped us refine our concept, build an incredible app, and create a marketing strategy that resonated with our target audience. We couldn't be happier with the results."
+</p>
+<div class="flex mt-4">
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-slide w-full flex-shrink-0 px-4">
+<div class="bg-white p-8 rounded shadow-lg">
+<div class="flex items-center mb-6">
+<div class="w-16 h-16 bg-gray-200 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520a%2520young%2520indian%2520male%2520entrepreneur%252C%2520confident%2520smile%252C%2520business%2520casual%2520attire%252C%2520neutral%2520background%252C%2520high%2520quality%2520portrait%2520photograph&width=200&height=200&seq=test3&orientation=squarish"
+alt="Shreyash Chintalwar"
+class="w-full h-full object-cover">
+</div>
+<div>
+<h3 class="text-xl font-semibold">Shreyash Chintalwar</h3>
+<p class="text-gray-600">COO, InnovatePro Solutions</p>
+</div>
+</div>
+<p class="text-gray-700 italic">
+"As a non-technical founder, I was worried about building an e-commerce platform. TARS Networks made the process seamless and enjoyable. Their branding expertise helped us stand out in a crowded market, and sales have exceeded our projections."
+</p>
+<div class="flex mt-4">
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+<i class="ri-star-fill ri-lg text-yellow-400"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button class="absolute top-1/2 -left-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center focus:outline-none" id="prev-testimonial">
+<i class="ri-arrow-left-s-line ri-lg text-gray-700"></i>
+</button>
+<button class="absolute top-1/2 -right-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center focus:outline-none" id="next-testimonial">
+<i class="ri-arrow-right-s-line ri-lg text-gray-700"></i>
+</button>
+<div class="flex justify-center mt-8">
+<div class="testimonial-dot w-3 h-3 rounded-full bg-primary mx-1 cursor-pointer" data-index="0"></div>
+<div class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 mx-1 cursor-pointer" data-index="1"></div>
+<div class="testimonial-dot w-3 h-3 rounded-full bg-gray-300 mx-1 cursor-pointer" data-index="2"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+<p class="text-gray-600 max-w-2xl mx-auto">
+Ready to turn your idea into a successful startup? Contact us today to schedule a consultation.
+</p>
+</div>
+<div class="flex flex-col md:flex-row gap-12">
+  <div class="md:w-1/2 bg-white p-8 rounded shadow-lg">
+    <h3 class="text-2xl font-semibold mb-6">Send Us a Message</h3>
+    <form id="contact-form">
+      <div class="mb-6">
+        <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" 
+          placeholder="Your name"
+          required
+        >
+      </div>
+      <div class="mb-6">
+        <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" 
+          placeholder="Your email"
+          required
+        >
+      </div>
+      <div class="mb-6">
+        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+        <input 
+          type="text" 
+          id="subject" 
+          name="subject" 
+          class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" 
+          placeholder="Subject"
+        >
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block text-gray-700 mb-2">Message</label>
+        <textarea 
+          id="message" 
+          name="message" 
+          rows="5" 
+          class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary" 
+          placeholder="Your message"
+          required
+        ></textarea>
+      </div>
+      <div class="mb-6 flex items-center">
+        <input 
+          type="checkbox" 
+          id="consent" 
+          name="consent" 
+          class="custom-checkbox mr-3"
+          required
+        >
+        <label for="consent" class="text-gray-700">I agree to the processing of my personal data</label>
+      </div>
+      <button 
+        type="submit" 
+        class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all shadow-lg w-full whitespace-nowrap"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="md:w-1/2 bg-white p-8 rounded shadow-lg">
+<h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Our Location</h4>
+<p class="text-gray-600">
+Hyderabad, Telangana<br>
+India
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-mail-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Email Us</h4>
+<p class="text-gray-600">
+tarsnetworks@gmail.com
+</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-phone-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Call Us</h4>
+<p class="text-gray-600">
++91 93682 03872<br>
++91 93980 97742
+</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-semibold mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-twitter-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div class="mt-8 h-64 bg-gray-100 rounded overflow-hidden">
+<div style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-size: cover; background-position: center;" class="w-full h-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<a href="#" class="h-12 mb-6 block">
+<img src="https://static.readdy.ai/image/c384ba9ce04c0eeacb5ee15aa9580a36/78c69925607d391994a3ffec47b0fb7e.jpeg" alt="TARS Logo" class="h-full">
+</a>
+<p class="text-gray-400 mb-6">
+Turning Ambitions into Real Startups. We help entrepreneurs build successful tech ventures through our comprehensive incubation program.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
+<i class="ri-twitter-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-primary hover:border-primary transition-colors">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+<li><a href="#services" class="text-gray-400 hover:text-primary transition-colors">Our Services</a></li>
+<li><a href="#how-it-works" class="text-gray-400 hover:text-primary transition-colors">How It Works</a></li>
+<li><a href="#portfolio" class="text-gray-400 hover:text-primary transition-colors">Portfolio</a></li>
+<li><a href="#testimonials" class="text-gray-400 hover:text-primary transition-colors">Testimonials</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors">Contact Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-6">Newsletter</h3>
+<p class="text-gray-400 mb-6">
+Subscribe to our newsletter to receive updates on startup opportunities and events.
+</p>
+<form class="flex mb-6">
+<input type="email" placeholder="Your email address" class="px-4 py-3 rounded-l-button border-none w-full text-gray-800">
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-r-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">
+Subscribe
+</button>
+</form>
+<div class="flex items-center space-x-4">
+<span class="text-gray-400">We accept:</span>
+<div class="flex space-x-2">
+<i class="ri-visa-fill ri-lg"></i>
+<i class="ri-mastercard-fill ri-lg"></i>
+<i class="ri-paypal-fill ri-lg"></i>
+<i class="ri-apple-fill ri-lg"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 mb-4 md:mb-0">
+&copy; 2025 TARS Networks. All rights reserved.
+</p>
+<a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors" id="back-to-top">
+<i class="ri-arrow-up-line ri-lg"></i>
+</a>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu Script -->
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+});
+});
+</script>
+<!-- Smooth Scroll Script -->
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+const headerHeight = document.querySelector('header').offsetHeight;
+const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+window.scrollTo({
+top: targetPosition,
+behavior: 'smooth'
+});
+}
+});
+});
+// Back to top button
+const backToTopButton = document.getElementById('back-to-top');
+if (backToTopButton) {
+backToTopButton.addEventListener('click', function(e) {
+e.preventDefault();
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});
+}
+});
+</script>
+<!-- Counter Animation Script -->
+<script id="counter-animation-script">
+document.addEventListener('DOMContentLoaded', function() {
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+const animateCounters = () => {
+counters.forEach(counter => {
+const target = +counter.getAttribute('data-target');
+const count = +counter.innerText;
+const increment = target / speed;
+if (count < target) {
+counter.innerText = Math.ceil(count + increment);
+setTimeout(animateCounters, 1);
+} else {
+counter.innerText = target;
+}
+});
+};
+// Intersection Observer to start animation when element is in view
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+animateCounters();
+observer.unobserve(entry.target);
+}
+});
+}, { threshold: 0.5 });
+if (counters.length > 0) {
+observer.observe(document.querySelector('#about'));
+}
+});
+</script>
+<!-- Portfolio Filter Script -->
+<script id="portfolio-filter-script">
+document.addEventListener('DOMContentLoaded', function() {
+const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-card');
+filterButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all buttons
+filterButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('text-gray-700', 'hover:bg-gray-200');
+});
+// Add active class to clicked button
+this.classList.add('bg-primary', 'text-white');
+this.classList.remove('text-gray-700', 'hover:bg-gray-200');
+const filter = this.getAttribute('data-filter');
+// Filter portfolio items
+portfolioItems.forEach(item => {
+if (filter === 'all' || item.getAttribute('data-category') === filter) {
+item.style.display = 'block';
+} else {
+item.style.display = 'none';
+}
+});
+});
+});
+});
+</script>
+<!-- Testimonial Slider Script -->
+<script id="testimonial-slider-script">
+document.addEventListener('DOMContentLoaded', function() {
+const slides = document.querySelectorAll('.testimonial-slide');
+const dots = document.querySelectorAll('.testimonial-dot');
+const prevButton = document.getElementById('prev-testimonial');
+const nextButton = document.getElementById('next-testimonial');
+const slidesContainer = document.querySelector('.testimonial-slides');
+let currentIndex = 0;
+const slideWidth = 100; // 100%
+// Update slider position
+const updateSlider = () => {
+slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+// Update dots
+dots.forEach((dot, index) => {
+if (index === currentIndex) {
+dot.classList.remove('bg-gray-300');
+dot.classList.add('bg-primary');
+} else {
+dot.classList.remove('bg-primary');
+dot.classList.add('bg-gray-300');
+}
+});
+};
+// Next slide
+const nextSlide = () => {
+currentIndex = (currentIndex + 1) % slides.length;
+updateSlider();
+};
+// Previous slide
+const prevSlide = () => {
+currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+updateSlider();
+};
+// Event listeners
+if (prevButton) prevButton.addEventListener('click', prevSlide);
+if (nextButton) nextButton.addEventListener('click', nextSlide);
+// Dot navigation
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+currentIndex = index;
+updateSlider();
+});
+});
+// Auto slide
+let interval = setInterval(nextSlide, 5000);
+// Pause on hover
+const sliderContainer = document.querySelector('.testimonial-slider');
+if (sliderContainer) {
+sliderContainer.addEventListener('mouseenter', () => {
+clearInterval(interval);
+});
+sliderContainer.addEventListener('mouseleave', () => {
+interval = setInterval(nextSlide, 5000);
+});
+}
+});
+</script>
+<!-- Contact Form Script --><script type="module">
+  // Import Firebase functions from CDN
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore.js";
+
+  // Your Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAotdy1ynD44jUBGovH5FdLJkh8kSQVziM",
+    authDomain: "tars-219b9.firebaseapp.com",
+    projectId: "tars-219b9",
+    storageBucket: "tars-219b9.appspot.com",
+    messagingSenderId: "1057332650888",
+    appId: "1:1057332650888:web:10a779ad538ffe0fbe103d"
+  };
+
+  // Initialize Firebase and Firestore
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Form submission handler
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const consent = document.getElementById('consent').checked;
+
+    // Basic validation
+    if (!name || !email || !message) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    if (!consent) {
+      alert('Please agree to the processing of your personal data.');
+      return;
+    }
+
+    try {
+      // Add a new document to "contacts" collection
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        subject,
+        message,
+        consent,
+        submittedAt: new Date().toISOString()
+      });
+      alert('Thank you for your message! We will get back to you soon.');
+      contactForm.reset();
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert('Sorry, there was an error submitting your message. Please try again.');
+    }
+  });
+</script>
+
+
+</body>
+</html>
